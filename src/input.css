@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media only screen and (max-width: 450px) {
+  .product {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 550px) {
+  .video {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
+input [types="text"]:focus ~ .input{
+      @apply text-blue-500 transform -translate-y-5 focus:duration:200 
+}
